@@ -1,7 +1,9 @@
 mport graphene
 
 class User(graphene.ObjectType):
-    # Add something here
+	hello = graphene.String(name=graphene.String(default_value="World"))
+	def resolve_hello(self, info, name):
+		return 'Hello ' + name
 
 class Query(graphene.ObjectType):
     user = graphene.Field(User, name=graphene.String())
@@ -11,4 +13,5 @@ class Query(graphene.ObjectType):
                        description="I'm an admin I can do anything")
 
 schema = graphene.Schema(query=Query)
-
+result = schema.execute('{ hello }')
+print(result.data['hello']) # "Hello World"
