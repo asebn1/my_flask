@@ -1,7 +1,7 @@
 # secure-app-team3-bob9
 
 ### Track : Consulting 9th
-### Name : Jae Ho, Kong
+### Name : Jae Ho, Kong (공재호)
 
 # First step
 ![니코](https://user-images.githubusercontent.com/57438644/91127287-e9ee6900-e6e0-11ea-82d4-97af6e86a613.PNG)
